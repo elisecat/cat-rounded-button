@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+    .customized {
+      --cat-rounded-button-background-color: #004c3c;
+      --cat-rounded-button-text-color: #cff;
+      --cat-rounded-button-hover-background-color: #3ff;
+      --cat-rounded-button-hover-text-color: #000;
+      --cat-rounded-button-animation-time: 1s;
+      --cat-rounded-button-height: 20px;
+      --cat-rounded-button-font-size: 12px;
+    }
+    .customized2 {
+      --cat-rounded-button-padding-x: 58px;
+      --cat-rounded-button-padding-y: 10px;
+      --cat-rounded-button-text-transform: none;
+    }
+    </style>
+</head>
+<body>
+    <cat-rounded-button> Texto del botón</cat-rounded-button>
+
+    <cat-rounded-button class="customized"> Clic aquí</cat-rounded-button>
+    <cat-rounded-button disabled> Desactivado</cat-rounded-button>
+
+    <script src="../cat-rounded-button.js" type="module"></script>
+</body>
+</html>

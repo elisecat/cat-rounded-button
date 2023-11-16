@@ -1,0 +1,26 @@
+{
+  "name": "cat-rounded-button",
+  "version": "1.0.0",
+  "description": "Web component to implement a styled button, with background color and rounded corners. Based on LitElement.",
+  "main": "cat-rounded-button.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "serve": "es-dev-server --app-index index.html --node-resolve --watch --open"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/elisecat/cat-rounded-button.git"
+  },
+  "author": "@catelissed",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/elisecat/cat-rounded-button/issues"
+  },
+  "homepage": "https://github.com/elisecat/cat-rounded-button#readme",
+  "dependencies": {
+    "lit-element": "^4.0.2"
+  },
+  "devDependencies": {
+    "es-dev-server": "^2.1.0"
+  }
+}
