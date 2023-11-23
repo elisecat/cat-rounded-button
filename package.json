@@ -3,9 +3,13 @@
   "version": "1.0.0",
   "description": "Web component to implement a styled button, with background color and rounded corners. Based on LitElement.",
   "main": "cat-rounded-button.js",
+  "type": "module",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "serve": "es-dev-server --app-index index.html --node-resolve --watch --open"
+    "serve": "es-dev-server --app-index index.html --node-resolve --watch --open",
+    "site:build": "npm run storybook:build",
+    "storybook": "start-storybook -p 9001",
+    "storybook:build": "build-storybook -o _site -s storybook-static"
   },
   "repository": {
     "type": "git",
@@ -18,9 +22,17 @@
   },
   "homepage": "https://github.com/elisecat/cat-rounded-button#readme",
   "dependencies": {
-    "lit-element": "^4.0.2"
+    "lit-element": "^4.0.2",
+    "node-fetch": "^2.6.7"
   },
   "devDependencies": {
-    "es-dev-server": "^2.1.0"
+    "@babel/core": "^7.23.3",
+    "@babel/preset-env": "^7.23.3",
+    "@open-wc/demoing-storybook": "^0.2.0",
+    "@storybook/addon-docs": "6.5.16",
+    "@storybook/react": "6.5.16",
+    "@web/dev-server-storybook": "^2.0.1",
+    "es-dev-server": "^2.1.0",
+    "storybook": "6.5.14"
   }
 }
